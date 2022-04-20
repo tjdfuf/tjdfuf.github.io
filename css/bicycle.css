@@ -1,0 +1,475 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button, input {
+    outline: none;
+    border: none;
+    color: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wrap {
+    position: relative;
+}
+
+
+
+header {
+    /* background: orange; */
+    width: 100%;
+    height: 100px;
+    line-height: 70px;
+    position: fixed;
+    background: #fff;
+    z-index: 1000;
+    top: 0;
+    /* margin-top: -100px; */
+}
+
+header .inner-header {
+    width: 60%;
+    margin: 0 auto;
+}
+
+header .inner-header .logo {
+    float: left;
+    /* background: blue; */
+    margin-right: 2%;
+    padding: 10px 0 0;
+}
+
+header .inner-header #search{
+    float: left;
+    /* background: red; */
+    width: 400px;
+    margin-top: 20px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    padding: 5px 10px;
+    
+}
+
+header .inner-header #search input {
+    border: 4 solid #000;
+    width: 300px;
+    float: left;
+    height: 30px;
+    
+}
+
+header .inner-header #search .search-button {
+    float: right;
+    height: 30px;   
+}
+
+header .inner-header .top-menu {
+    float: right;
+    position: relative;
+    /* background: aqua; */
+}
+
+
+
+
+
+header .inner-header #wrap-download {
+    float: left;
+    /* background: green; */
+    margin-right: 30px;
+}
+
+header .inner-header #wrap-download .download div {
+    font-weight: 700;
+}
+
+header .inner-header #wrap-download i {
+    padding: 5px;
+}
+
+header .inner-header #wrap-download a i:first-child {
+    display: none;
+}
+
+header .inner-header #wrap-download a:active i:first-child{
+    display: inline;
+}
+
+header .inner-header #wrap-download a:active i:last-child {
+    display: none;
+}
+
+header .inner-header #wrap-download a:active .app-link ul {
+    display: inline;
+}
+
+header .inner-header .top-menu .app-link {
+    position: absolute;
+    right: 130px;
+    top: -10px;
+    display: none;
+}
+
+header .inner-header .top-menu .app-link ul{
+    border: 1px solid #000;
+    /* background: orange; */
+    margin-top: 80px;
+    width: 170px;
+    padding: 10px 0 0 30px;
+    border-radius: 5px;
+    line-height: 50px;
+
+}
+
+
+
+
+
+
+header .inner-header .top-menu .chat {
+    float: left;
+    /* background: yellow; */
+    background: #fff;
+    line-height: 65px;
+}
+
+
+header .inner-header .top-menu .chat a {
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header .inner-header .top-menu .chat a em {
+    font-size: 12px;
+    color: orange;
+}
+
+header .inner-header .top-search {
+    display: block;
+    position: absolute;
+    /* background: red; */
+    top: 50px;
+    left: 450px;
+    width: 410px;
+}
+
+header .inner-header .top-search .nav-name {
+    float: left;
+    font-weight: 700;
+}
+
+header .inner-header .top-search .nav-search {
+    float: right;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+header .inner-header .top-search .nav-search a {
+    margin-left: 3px;
+}
+
+header .inner-header .top-search .nav-search a:hover {
+    text-decoration: underline;
+}
+
+
+/* header .inner-header .top-search {
+    position: relative;
+    top: -30px;
+}
+
+header .inner-header .top-search div {
+    font-weight: 700;
+    position: relative;
+    right: 500px;
+    top: 72px;
+}
+
+
+header .inner-header .top-search a:hover {
+    text-decoration: underline;
+} */
+
+
+
+
+
+
+
+
+/* main */
+
+.main .change {
+    width: 60%;
+    background: #fff;
+    margin: 100px auto 30px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.main .info {
+    width: 60%;
+    background: #fff;
+    margin: 0 auto 50px;
+    padding: 15px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+
+.main div {
+    margin-bottom: 20px;
+}
+
+.main .change h2 {
+    font-weight: bold;
+    padding: 15px 0px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    margin-left: 40px;
+}
+
+.main .info h2 {
+    font-weight: bold;
+    padding: 15px 0px;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.main img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main .change .product1 a {
+    float: left;
+    width: 28%;
+    margin-right: 4%;
+    /* box-sizing: border-box; */
+    /* background: red; */
+}
+
+.main .change .product2 a {
+    float: left;
+    width: 28%;
+    margin-right: 4%;
+    /* box-sizing: border-box; */
+}
+.main .change .product1 a:first-child {
+    margin-left: 4%;
+}
+
+.main .change .product2 a:first-child {
+    margin-left: 4%;
+}
+
+.main .change div a .image li {
+    line-height: 2;
+}
+
+.main .change div a .image li:nth-child(2) {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.main .change div a .image li.address {
+    color: grey;
+}
+
+.main .change div a .image li.price {
+    color: orange;
+}
+
+/* .main .change div a .image li.price img {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    float: right;} */
+
+.main .change div a .image li.price .price-detail {
+    float: left;
+}
+.main .change div a .image li.price .like {
+    float: right;
+}
+
+.main .change div a .image li.price span {
+    color: #000;
+}
+
+.main button.more {
+    width: 100%;
+    /* background: black; */
+    /* text-align: center; */
+}
+
+.main button.more a{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+
+.main .info img {
+    width: 15px;
+    height: 15px;
+}
+
+.main .info h3 {
+    /* background: pink; */
+    line-height: 1.5;
+    padding: 10px 0;
+}
+
+.main .info h3 a {
+    font-size: 1.4em;
+}
+
+.main .info p {
+    /* background: yellowgreen; */
+    padding-bottom: 10px;
+    border-bottom: 1px solid darkgray;
+    /* float: left; */
+    width: 100%;
+    /* box-sizing: border-box; */
+}
+
+.main .info p a {
+    color: gray;
+}
+
+
+
+.main .info h3 a em {
+    display: inline-block;
+    background: rgba(241, 144, 52, 0.15);
+    color: orange;
+}
+
+.main .info p .left {
+    color: gray;
+    float: left;
+    width: 30%;
+}
+
+.main .info p .right {
+    float: right;
+    /* width: 20%; */
+
+    /* background: #000; */
+
+}
+
+
+/* main. 끝 */
+
+
+/* footer */
+footer {
+    background: #3f4953;
+}
+
+footer section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+footer a {
+    color: darkgray;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer section nav {
+    /* width: 100%; */
+    padding: 60px 0 40px;
+    border-bottom: 1px solid darkgray;
+}
+
+footer section nav ul {
+    /* background: orange; */
+    width: 20%;
+    line-height: 2.5;
+}
+
+footer section nav .bottom-logo {
+    float: left;
+    /* margin-right: 60%; */
+}
+
+footer section nav ul {
+    float: left;
+}
+
+footer section nav .list1 li a {
+    color : #fff;
+    font-weight: bold;
+}
+
+footer section nav .list2 li:first-child a {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer section .mail {
+    padding: 30px 0;
+}
+
+footer section .mail li {
+    color: gainsboro;
+    line-height: 1.8;
+}
+
+footer section .mail li:nth-child(odd) {
+    float: left;
+    margin-right: 15px;
+}
+
+footer section .address li {
+    float: left;
+    margin-right: 15px;
+    color: darkgray;
+}
+
+footer section div {
+    padding: 30px 0;
+}
+
+footer section div ul {
+    float: left;
+}
+
+footer section div .sns li {
+    float: left;
+    margin-right: 30px;
+}
+
+footer section div .local li {
+    color: darkgray;
+    text-decoration: underline;
+    float: left;
+}
+
+footer section div .local li img {
+    width: 25px;
+    margin-left: 40px;  
+}
+
+footer section .copy {
+    padding: 10px 0 30px;
+    color: darkgray;
+}
+
+/* end. footer */
